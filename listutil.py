@@ -24,4 +24,3 @@ def count_unique(list):
     return len(x)
 
 
-print(count_unique(None))

@@ -17,6 +17,4 @@ class tester(unittest.TestCase):
         list = []
         self.assertEquals(0, count_unique(list))
 
-    def test_none(self):
-        list = 10
-        self.assertEquals(, count_unique())
+
