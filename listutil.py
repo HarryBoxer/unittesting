@@ -16,7 +16,8 @@ def count_unique(list):
     >>> count_unique([ ])
     0
     """
-
+    if list is None:
+        raise TypeError("List must not be none")
     x = []
     for i in range(0, len(list)):
         if list[i] not in x:
@@ -24,3 +25,5 @@ def count_unique(list):
     return len(x)
 
 
+
+print(count_unique(['a','A','a','a']))

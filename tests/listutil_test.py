@@ -17,4 +17,16 @@ class tester(unittest.TestCase):
         list = []
         self.assertEquals(0, count_unique(list))
 
+    def test_three_unique(self):
+        list = ['a', 'c', 'b', 'b', 'b', 'a', 'c', 'c']
+        self.assertEquals(3, count_unique(list))
+
+    def test_upper_and_lower(self):
+        list = ['a', 'A']
+        self.assertEquals(3, count_unique(list))
+
+    def test_two_upper_and_lower(self):
+        list = ['a', 'A', 'b', 'B']
+        self.assertEquals(3, count_unique(list))
+
 
