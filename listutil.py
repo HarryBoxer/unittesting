@@ -25,5 +25,50 @@ def count_unique(list):
     return len(x)
 
 
+def search(list, element):
+    list.sort()
+    if element in list:
+        return list.index(element)
+    elif element not in list:
+        return -1
+    else:
+        raise TypeError("Search element must not be none")
 
-print(count_unique(['a','A','a','a']))
+
+def binary_search(list, element):
+    """
+    This function searches for an element in a list, where the list contents are already sorted
+    but this function will sort it again for sure. Use binary search.
+    And return index of the matching element if the search element is not in the list will return -1
+    :param list: list of elements to find index elements
+    :param element: element that interest
+    :return: index of that element, -1 if index does not exist.
+    >>> binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],5)
+    4
+    >>> binary_search([90, 91, 1022, 3033, 4000], 91)
+    1
+    >>> binary_search([90, 91, 1022, 3033, 4000], 999)
+    -1
+    >>> binary_search(['a', 'b', 'c'], "a")
+    0
+    >>> binary_search(['b', 'a', 'c'], "a")
+    0
+    """
+    list.sort()
+    if list is None:
+        raise TypeError("Search element must not be none")
+    elif element in list:
+        head = 0
+        tail = len(list)-1
+        while True:
+            mid = (head + tail) // 2
+            if element == list[mid]:
+                return mid
+            elif element > list[mid]:
+                head = mid + 1
+            elif element < list[mid]:
+                tail = mid - 1
+    else:
+        return -1
+
+print(binary_search([10, 10, 10, 10, 10, 10], 10))
