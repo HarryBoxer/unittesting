@@ -1,6 +1,6 @@
 ## Tests for countUnique
 
-|------------------------------------------------------------|
+
 | Test case                             |  Expected Result   |
 |---------------------------------------|--------------------|
 | empty list                            | return 0           |
@@ -9,13 +9,11 @@
 | three uniques                         | return 3           |
 | one alphabet with upper and lowercase | return 2           |
 | two alphabet with upper and lowercase | return 4           |
-|------------------------------------------------------------|
 
 
 
 # Tests for searchBinary
 
-|--------------------------------------------------------------------------------------|
 | Test case                             |  Expected Result                             |
 |---------------------------------------|----------------------------------------------|
 | empty list                            | return -1                                    |
@@ -24,6 +22,5 @@
 | duplicate element even amount         | return most close to the middle one from less|
 | None                                  | return Raises TypeError                      |
 | element not available                 | return -1                                    |
-|--------------------------------------------------------------------------------------|
 
 

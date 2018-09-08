@@ -1,7 +1,6 @@
 import unittest
 
-from listutil import count_unique
-from listutil import binary_search
+from listutil import count_unique, binary_search
 
 
 class TestUnique(unittest.TestCase):
