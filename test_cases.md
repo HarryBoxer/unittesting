@@ -12,7 +12,7 @@
 
 
 
-# Tests for searchBinary
+## Tests for searchBinary
 
 | Test case                             |  Expected Result                             |
 |---------------------------------------|----------------------------------------------|
