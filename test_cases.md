@@ -1,6 +1,5 @@
 ## Tests for countUnique
 
-
 | Test case                             |  Expected Result   |
 |---------------------------------------|--------------------|
 | empty list                            | return 0           |

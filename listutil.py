@@ -25,16 +25,6 @@ def count_unique(list):
     return len(x)
 
 
-def search(list, element):
-    list.sort()
-    if element in list:
-        return list.index(element)
-    elif element not in list:
-        return -1
-    else:
-        raise TypeError("Search element must not be none")
-
-
 def binary_search(list, element):
     """
     This function searches for an element in a list, where the list contents are already sorted
@@ -70,5 +60,3 @@ def binary_search(list, element):
                 tail = mid - 1
     else:
         return -1
-
-print(binary_search([10, 10, 10, 10, 10, 10], 10))
